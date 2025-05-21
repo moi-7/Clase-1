@@ -1,49 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tributo a Gorillaz</title>
-    <style>
-      @font-face {
-        font-family: "Inter";
-        src: url("Assets/fonts/inter.ttf") format("truetype");
-        font-display: swap;
-      }
-      body {
-        font-family: "Inter", Arial, sans-serif;
-        background-color: #f0f0f0;
-        color: #333;
-        margin: 0;
-        padding: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Gorillaz</h1>
-      <h2>Un viaje musical único</h2>
-      <p>
-        Gorillaz es una banda virtual británica creada en 1998 por el músico
-        Damon Albarn y el artista Jamie Hewlett. La banda es conocida por su
-        estilo ecléctico que combina géneros como el rock, hip-hop, reggae y
-        electrónica, así como por sus innovadoras presentaciones visuales y su
-        narrativa de personajes animados.
-      </p>
-    </header>
 
-    <main>
-      <img
-        src="Assets\images\Gorillaz_logo.svg.png"
-        alt="Logo de Gorillaz"
-        width="400"
-        height="200"
-      />
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tributo a Gorillaz</title>
+  <link rel="icon" type="image/svg" href="Assets\images\favicon.svg" sizes="32x32">
+  <link rel="stylesheet" href="Css\style.css">
+</head>
 
-    <footer>
-      <p>Creado por Moisés</p>
-      <p>Todos los derechos reservados &copy; 2025</p>
-    </footer>
-  </body>
+<body>
+
+  <!-- Encabezado principal -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a>
+          <img src="Assets\images\logo.png" alt="Logo de Gorillaz" />
+        </a>
+      </div>
+      <ul>
+        <li><a href="#biografia">Biografía</a></li>
+        <li><a href="#personajes">Personajes</a></li>
+        <li><a href="#discografia">Discografía</a></li>
+        <li><a href="#galeria">Galería</a></li>
+      </ul>
+    </nav>
+    <div class="overlay">
+      <a href="#biografia"><span>Biografía</span></a>
+    </div>
+  </header>
+
+  <!-- Sección principal del sitio -->
+  <main>
+    <!-- Biografía de la banda -->
+    <section id="biografia">
+      <h2>Biografía</h2>
+      <p>Gorillaz es una banda virtual británica formada en 1998 por Damon Albarn y Jamie Hewlett. El grupo se
+        caracteriza por sus miembros animados y su innovador enfoque visual y musical, fusionando géneros como rock,
+        hip-hop, electrónica y pop. A lo largo de su carrera, Gorillaz ha lanzado varios álbumes aclamados y ha
+        colaborado con numerosos artistas internacionales, consolidándose como un proyecto pionero en la música
+        contemporánea y la cultura digital.</p>
+    </section>
+
+    <!-- Personajes animados -->
+    <h2>Personajes de la Banda</h2>
+    <section id="personajes">
+
+      <article>
+        <div>
+          <img class="avatar" src="Assets\images\2D.jpg" alt="Foto de 2D vocalista del grupo" />
+        </div>
+        <h3>2-D</h3>
+        <p>
+          Vocalista principal de Gorillaz, conocido por su voz melancólica y sus ojos completamente negros. Es
+          tranquilo, distraído y a menudo parece perdido en su propio mundo.
+        </p>
+      </article>
+
+      <article>
+        <div>
+          <img class="avatar" src="Assets\images\Murdoc .jpg" alt="Foto de 2D vocalista del grupo" />
+        </div>
+        <h3>Murdoc Niccals</h3>
+        <p>
+          Bajista y autoproclamado fundador de la banda, con una actitud arrogante y un pasado turbio. Representa el
+          caos y la energía oscura del grupo.
+        </p>
+      </article>
+
+      <article>
+        <div>
+          <img class="avatar" src="Assets\images\Noodle.jpg" alt="Foto de 2D vocalista del grupo" />
+        </div>
+        <h3>Noodle</h3>
+        <p>
+          Guitarrista japonesa experta en artes marciales y tecnología. Aunque fue introducida como una niña misteriosa,
+          con el tiempo se convirtió en una figura clave del grupo.
+        </p>
+      </article>
+
+      <article>
+        <div>
+          <img class="avatar" src="Assets\images\Russel.jpg" alt="Foto de 2D vocalista del grupo" />
+        </div>
+        <h3>Russel Hobbs</h3>
+        <p>
+          Baterista con influencias del hip hop, conocido por su carácter reflexivo y su conexión con lo espiritual. Fue
+          poseído por espíritus de amigos fallecidos, que influyeron en el sonido de la banda.
+        </p>
+      </article>
+    </section>
+
+
+
+    <!-- Discografía -->
+    <section id="discografia">
+      <h2>Discografía</h2>
+      <ul>
+        <li><strong>Gorillaz</strong> (2001)</li>
+        <li><strong>Demon Days</strong> (2005)</li>
+        <li><strong>Plastic Beach</strong> (2010)</li>
+        <!-- Y más -->
+      </ul>
+    </section>
+
+    <!-- Galería de imágenes o multimedia -->
+    <section id="galeria">
+      <h2>Galería</h2>
+      <figure>
+        <img src="imagen1.jpg" alt="Gorillaz en concierto" />
+        <figcaption>Concierto en vivo de Gorillaz</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <!-- Pie de página con info adicional o legal -->
+  <footer id="contacto">
+    <p>Este sitio es un proyecto personal sin fines de lucro.</p>
+    <p>Todos los derechos de imagen y música pertenecen a sus respectivos autores.</p>
+  </footer>
+
+</body>
+
 </html>
