@@ -17,13 +17,35 @@ body {
   line-height: 1.6;
 }
 
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+
+p {
+  color: #212121;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  text-wrap: balance;
+}
+
 a {
   color: #caf398;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #caf398;
+}
+
+ul{
+  list-style: none;
 }
 
 img {
@@ -55,11 +77,6 @@ nav a {
   color: #fff;
   transition: color 0.3s ease;
   font-weight: bold;
-}
-
-nav a:hover {
-  color: #caf398;
-  text-decoration: none;
 }
 
 nav ul {
@@ -98,13 +115,13 @@ nav li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .overlay a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   position: absolute;
   left: 50%;
   bottom: 3.5rem;
@@ -118,6 +135,7 @@ nav li {
   padding: 1rem 2rem;
   border-radius: 100vmax;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .overlay span:hover {
@@ -125,12 +143,6 @@ nav li {
   color: #000;
   border: 1px solid #000;
   transition: all 0.3s ease;
-}
-
-.overlay a img {
-  width: 6rem;
-  height: auto;
-  filter: drop-shadow(0 0 30px #000000);
 }
 
 @keyframes flotar {
@@ -143,21 +155,49 @@ nav li {
   }
 }
 
-main{
-border: 1px solid red;
-text-align: center;
-padding: 5rem;
+main {
+  text-align: center;
+  padding: 5rem;
 }
 
-#biografia{
-width: 100%;
-height: 20rem;
-background-color: seagreen;
+#biografia {
+  width: 100%;
+  max-height: fit-content;
+  overflow: hidden;
 }
 
-#personajes{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-grid-template-rows: auto;
-gap: 1.5rem;
+main h1 {
+  background-color: #000;
+  color: #fff;
+  margin: 2rem 0;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.bcontenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.bcontenido p {
+  font-size: 1.2rem;
+}
+
+.bcontenido img {
+  border-radius: 1rem;
+  width: 80%;
+  height: auto;
+  box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.4);
+  place-self: center;
+}
+
+.pcontenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  gap: 1.5rem;
 }
